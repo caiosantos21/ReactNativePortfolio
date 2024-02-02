@@ -2,6 +2,7 @@
   "expo": {
     "name": "ReactNativePortfolio",
     "slug": "ReactNativePortfolio",
+    "scheme": "ReactNativePortfolio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +13,6 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
-    "scheme": "your-app-scheme",
     "ios": {
       "supportsTablet": true
     },

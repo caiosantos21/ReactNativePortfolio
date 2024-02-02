@@ -1,21 +1,22 @@
 // import { DatabaseProvider } from '@nozbe/watermelondb/react'
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
 import React from 'react'
 // import { projectDb } from './src/database/config'
 import { Pressable, Text } from 'react-native'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 function Home() {
   return (
-    <SafeAreaProvider>
-      <Text>ddsadasdasdasd</Text>
+    <>
+      <Text>ddsa3323asd</Text>
 
-      <Link href="/teste" asChild>
-        <Pressable>
-          <Text>Home</Text>
-        </Pressable>
+      <Link href="/teste/1" style={{ marginVertical: 10 }}>
+        <Text>Ir para teste</Text>
       </Link>
-    </SafeAreaProvider>
+
+      <Pressable onPress={() => router.push(`/teste/1`)}>
+        <Text>Ir para teste w</Text>
+      </Pressable>
+    </>
   )
 }
 
