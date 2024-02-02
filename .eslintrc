@@ -14,5 +14,5 @@
     "browser": true,
     "es2021": true
   },
-  "ignorePatterns": ["tsconfig.json"]
+  "ignorePatterns": ["*.json"]
 }
