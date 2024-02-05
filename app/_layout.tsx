@@ -1,14 +1,21 @@
 import { Stack } from 'expo-router'
 import React from 'react'
+import { PaperProvider } from 'react-native-paper'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { projectTheme } from '../src/theme'
 
-export default function RootLayout() {
+const _layout = () => {
   return (
-    <SafeAreaProvider>
-      <Stack>
-        <Stack.Screen name="index" options={{ headerTitle: 'Home' }} />
-        <Stack.Screen name="teste/[id]" options={{ headerTitle: 'Teste' }} />
-      </Stack>
-    </SafeAreaProvider>
+    <PaperProvider theme={projectTheme}>
+      <SafeAreaProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" />
+          <Stack.Screen name="(unauth)" />
+          <Stack.Screen name="(auth)" />
+        </Stack>
+      </SafeAreaProvider>
+    </PaperProvider>
   )
 }
+
+export default _layout

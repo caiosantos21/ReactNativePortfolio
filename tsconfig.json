@@ -4,6 +4,6 @@
     "strict": true,
     "experimentalDecorators": true
   },
-  "include": ["src"], // which files to compile
-  "exclude": ["node_modules"] // which files to skip
+  "include": ["src", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  "exclude": ["node_modules"]
 }

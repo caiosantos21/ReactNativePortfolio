@@ -1,23 +1,32 @@
-// import { DatabaseProvider } from '@nozbe/watermelondb/react'
-import { Link, router } from 'expo-router'
+import { router } from 'expo-router'
 import React from 'react'
-// import { projectDb } from './src/database/config'
-import { Pressable, Text } from 'react-native'
+import { Text, View } from 'react-native'
+import { Button } from 'react-native-paper'
 
-function Home() {
+const index = () => {
   return (
     <>
-      <Text>ddsa3323asd</Text>
+      <View style={{ flex: 1, marginVertical: 50 }}>
+        <Text>index</Text>
 
-      <Link href="/teste/1" style={{ marginVertical: 10 }}>
-        <Text>Ir para teste</Text>
-      </Link>
+        <Button
+          icon="login"
+          mode="contained"
+          onPress={() => router.push('(unauth)/login')}
+        >
+          GO TO LOGIN
+        </Button>
 
-      <Pressable onPress={() => router.push(`/teste/1`)}>
-        <Text>Ir para teste w</Text>
-      </Pressable>
+        <Button
+          icon="camera"
+          mode="contained"
+          onPress={() => router.push('(auth)')}
+        >
+          GO TO HOME
+        </Button>
+      </View>
     </>
   )
 }
 
-export default Home
+export default index

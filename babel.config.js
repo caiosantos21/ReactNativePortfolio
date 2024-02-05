@@ -13,8 +13,6 @@ module.exports = function (api) {
         }
       ],
       ['module:react-native-dotenv']
-      //   require.resolve('expo-router/babel'),
-      //   'nativewind/babel'
     ]
   }
 }
