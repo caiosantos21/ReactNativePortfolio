@@ -1,14 +1,12 @@
 import { router } from 'expo-router'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import { Button } from 'react-native-paper'
 
 const index = () => {
   return (
     <>
-      <View style={{ flex: 1, marginVertical: 50 }}>
-        <Text>index</Text>
-
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Button
           icon="login"
           mode="contained"

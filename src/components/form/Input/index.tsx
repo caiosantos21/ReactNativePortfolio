@@ -1,12 +1,11 @@
 import React from 'react'
 import { useController } from 'react-hook-form'
 import { TextInput } from 'react-native-paper'
-import { FormTextInputProps } from './types/FormTextInputProps'
+import { FormTextInputProps } from '../types/FormTextInputProps'
 
-export const FormTextInput = (props: FormTextInputProps) => {
-  const { formProps, inputProps } = props
+export const FormInput = (props: FormTextInputProps) => {
+  const { formProps, label } = props
   const { defaultValue = '', ...otherformProps } = formProps
-  const { label, isPassword } = inputProps
 
   const { field } = useController({ defaultValue, ...otherformProps })
 
@@ -16,7 +15,7 @@ export const FormTextInput = (props: FormTextInputProps) => {
       label={label}
       value={field.value}
       onChangeText={field.onChange}
-      secureTextEntry={isPassword}
+      style={{ marginVertical: 3 }}
     />
   )
 }
