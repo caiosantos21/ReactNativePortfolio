@@ -1,8 +1,8 @@
 import { router } from 'expo-router'
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { View } from 'react-native'
 import { Button, Card } from 'react-native-paper'
+import { BodyContainer } from '../../src/components/containers/Body'
 import { FormInput } from '../../src/components/form/Input'
 import { FormPassword } from '../../src/components/form/Password'
 
@@ -10,10 +10,10 @@ const Sign = () => {
   const { control } = useForm()
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <BodyContainer>
       <Card style={{ width: '80%' }}>
         <Card.Content>
-          <FormInput formProps={{ control, name: 'name' }} label="E-Nome" />
+          <FormInput formProps={{ control, name: 'name' }} label="Nome" />
 
           <FormInput formProps={{ control, name: 'login' }} label="E-mail" />
 
@@ -31,7 +31,7 @@ const Sign = () => {
           <Button onPress={() => {}}>Cadastrar</Button>
         </Card.Actions>
       </Card>
-    </View>
+    </BodyContainer>
   )
 }
 

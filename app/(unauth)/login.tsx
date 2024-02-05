@@ -3,6 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { View } from 'react-native'
 import { Button, Card } from 'react-native-paper'
+import { BodyContainer } from '../../src/components/containers/Body'
 import { FormInput } from '../../src/components/form/Input'
 import { FormPassword } from '../../src/components/form/Password'
 
@@ -10,7 +11,7 @@ const Login = () => {
   const { control } = useForm()
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <BodyContainer>
       <Card style={{ width: '80%' }}>
         <Card.Content>
           <FormInput formProps={{ control, name: 'login' }} label="E-mail" />
@@ -37,7 +38,7 @@ const Login = () => {
           </View>
         </Card.Actions>
       </Card>
-    </View>
+    </BodyContainer>
   )
 }
 

@@ -20,7 +20,7 @@ export const FormPassword = (props: FormTextInputProps) => {
       label={label}
       value={field.value}
       onChangeText={field.onChange}
-      style={{ marginVertical: 3 }}
+      style={{ marginVertical: 4 }}
       secureTextEntry={secureTextEntry}
       right={<TextInput.Icon icon={icon} onPress={toggleIsPassword} />}
     />

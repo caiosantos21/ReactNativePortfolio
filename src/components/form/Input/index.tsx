@@ -15,7 +15,7 @@ export const FormInput = (props: FormTextInputProps) => {
       label={label}
       value={field.value}
       onChangeText={field.onChange}
-      style={{ marginVertical: 3 }}
+      style={{ marginVertical: 4 }}
     />
   )
 }
