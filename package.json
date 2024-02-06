@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@expo/vector-icons": "^13.0.0",
+    "@expo/vector-icons": "^14.0.0",
     "@nozbe/watermelondb": "^0.27.1",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "^6.1.9",
@@ -46,7 +46,7 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "metro-react-native-babel-preset": "^0.77.0",
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "typescript": "^5.3.3"
   },
   "private": true
