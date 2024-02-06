@@ -8,11 +8,13 @@ const _layout = () => {
   return (
     <PaperProvider theme={projectTheme}>
       <SafeAreaProvider>
+        {/* <DatabaseProvider database={projectDb}> */}
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="(unauth)" />
           <Stack.Screen name="(auth)" />
         </Stack>
+        {/* </DatabaseProvider> */}
       </SafeAreaProvider>
     </PaperProvider>
   )
