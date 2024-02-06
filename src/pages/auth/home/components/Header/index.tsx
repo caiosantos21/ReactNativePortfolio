@@ -10,6 +10,7 @@ export const HomeAuthHeader = () => {
 
   return (
     <Appbar.Header>
+      <Appbar.Action icon="exit-to-app" />
       <Appbar.Content title="" />
 
       <Menu
