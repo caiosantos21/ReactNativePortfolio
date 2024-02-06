@@ -1,10 +1,10 @@
-import { Stack } from 'expo-router'
+import { Tabs } from 'expo-router'
 import React from 'react'
 
 export default function UnauthLayout() {
   return (
-    <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="index" />
-    </Stack>
+    <Tabs screenOptions={{ headerShown: false }}>
+      <Tabs.Screen name="index" options={{ title: 'Home' }} />
+    </Tabs>
   )
 }

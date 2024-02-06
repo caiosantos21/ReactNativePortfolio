@@ -23,16 +23,20 @@ const Login = () => {
         </Card.Content>
 
         <Card.Actions style={{ flexDirection: 'column' }}>
-          <Button icon="login" mode="contained" onPress={() => {}}>
+          <Button
+            icon="login"
+            mode="contained"
+            onPress={() => router.replace('/(auth)')}
+          >
             Acessar
           </Button>
 
           <View style={{ flexDirection: 'row' }}>
-            <Button onPress={() => router.push('(unauth)/sign')}>
+            <Button onPress={() => router.push('/(unauth)/sign')}>
               Cadastro
             </Button>
 
-            <Button onPress={() => router.push('(unauth)/forgot')}>
+            <Button onPress={() => router.push('/(unauth)/forgot')}>
               Esqueceu a senha?
             </Button>
           </View>

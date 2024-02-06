@@ -1,30 +1,12 @@
-import { router } from 'expo-router'
+import { Redirect, useRootNavigationState } from 'expo-router'
 import React from 'react'
-import { View } from 'react-native'
-import { Button } from 'react-native-paper'
 
 const index = () => {
-  return (
-    <>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Button
-          icon="login"
-          mode="contained"
-          onPress={() => router.push('(unauth)/login')}
-        >
-          GO TO LOGIN
-        </Button>
+  const rootNavigationState = useRootNavigationState()
 
-        <Button
-          icon="camera"
-          mode="contained"
-          onPress={() => router.push('(auth)')}
-        >
-          GO TO HOME
-        </Button>
-      </View>
-    </>
-  )
+  if (!rootNavigationState?.key) return null
+
+  return <Redirect href={'/(unauth)/login'} />
 }
 
 export default index
