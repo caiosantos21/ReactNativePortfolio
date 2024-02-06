@@ -1,4 +1,3 @@
-import { useDatabase } from '@nozbe/watermelondb/react'
 import { router } from 'expo-router'
 import React from 'react'
 import { useForm } from 'react-hook-form'
@@ -10,7 +9,6 @@ import { FormPassword } from '../../src/components/form/Password'
 
 const Login = () => {
   const { control } = useForm()
-  const db = useDatabase()
 
   return (
     <BodyContainer>
