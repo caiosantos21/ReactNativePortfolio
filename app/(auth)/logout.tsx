@@ -1,7 +1,7 @@
+import { BodyContainer } from '@components/containers/Body'
 import { router } from 'expo-router'
 import React from 'react'
 import { Button, Card } from 'react-native-paper'
-import { BodyContainer } from '../../src/components/containers/Body'
 
 function LogoutAuth() {
   const handleConfirm = () => {

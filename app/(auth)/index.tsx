@@ -1,6 +1,6 @@
+import { BodyContainer } from '@components/containers/Body'
 import React from 'react'
 import { Text } from 'react-native'
-import { BodyContainer } from '../../src/components/containers/Body'
 
 function HomeAuth() {
   return (

@@ -1,10 +1,10 @@
+import { BodyContainer } from '@components/containers/Body'
+import { FormInput } from '@components/form/Input'
+import { FormPassword } from '@components/form/Password'
 import { router } from 'expo-router'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Button, Card } from 'react-native-paper'
-import { BodyContainer } from '../../src/components/containers/Body'
-import { FormInput } from '../../src/components/form/Input'
-import { FormPassword } from '../../src/components/form/Password'
 
 const Sign = () => {
   const { control } = useForm()

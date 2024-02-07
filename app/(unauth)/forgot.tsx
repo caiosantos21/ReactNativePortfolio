@@ -1,9 +1,9 @@
+import { BodyContainer } from '@components/containers/Body'
+import { FormInput } from '@components/form/Input'
 import { router } from 'expo-router'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Button, Card } from 'react-native-paper'
-import { BodyContainer } from '../../src/components/containers/Body'
-import { FormInput } from '../../src/components/form/Input'
 
 const Forgot = () => {
   const { control } = useForm()
