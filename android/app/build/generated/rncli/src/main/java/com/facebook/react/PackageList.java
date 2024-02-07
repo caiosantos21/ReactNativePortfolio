@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 // @nozbe/watermelondb
 import com.nozbe.watermelondb.WatermelonDBPackage;
-// @react-native-community/masked-view
+// @react-native-masked-view/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // expo
 import expo.modules.ExpoModulesPackage;
